@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Card from './Card';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
+import { kitten } from './kitten';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Card id={kitten[0].id} name={kitten[0].name} email={kitten[0].email}/>
+    <Card id={kitten[1].id} name={kitten[1].name} email={kitten[1].email}/>
+    <Card id={kitten[2].id} name={kitten[2].name} email={kitten[2].email}/>
   </React.StrictMode>
 );
 
